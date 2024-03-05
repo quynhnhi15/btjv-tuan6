@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    Customer Name:
+    <input type="text" id="name">
+    <br>
+    ID:
+    <input type="text" id="id">
+    <br>
+    Product Name:
+    <input type="text" id="prdname">
+    <br>s
+    Quantity:
+    <input type="text" id="qty">
+    <br>
+    Price:
+    <input type="text" id="price">
+    <br>
+    <input type="button" value="Save" onclick="save()">
+    <input type="button" value="Show" onclick="show()">
+    <input type="button" value="Reset" onclick="reset()">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Auto increament</th>
+                <th>Customer Name </th>
+                <th>ID </th>
+                <th>Product Name </th>
+                <th>Quantity </th>
+                <th>Price </th>
+                <th>Total </th>
+            </tr>
+        </thead>
+        <tbody id="tbl"></tbody>
+    </table>
+</body>
+</html>
